@@ -21,7 +21,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 - `title` (String, required)
 - `author` (ObjectId reference to Author, required)
 - `genre` (String, optional)
-- `dateFinished` (Date, required)
+- `releaseDate` (Date, required)
 - `favorite` (Boolean, default: false)
 - `notes` (String, optional)
 
