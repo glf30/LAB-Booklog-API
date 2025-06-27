@@ -63,16 +63,12 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 ## Requirements
 
 - Use MongoDB with Mongoose models for `Book` and `Author`
-- Use Express with `express.Router()` to organize routes
-- All routes must live in modular files (routes, controllers, models)
+- Utilize Models, Controllers, and Routers to organize your codebase
 - Use `.populate()` to link books with their authors
-- Use Mongoose validation to enforce required fields
 - Use query parameters to support filtering and sorting
 - Prevent deletion of:
   - Books marked as `favorite: true`
   - Authors who have any associated books
-- Respond with appropriate status codes and error messages
-- Use environment variables for config (e.g. Mongo URI, port)
 
 ---
 
