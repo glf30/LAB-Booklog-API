@@ -1,7 +1,5 @@
 # LAB-Booklog-API
 
-# BookLog API – Final Project (MongoDB & Express)
-
 ## Objective
 
 Build a backend-only RESTful API using MongoDB and Express that models a book tracking system with authors. This project must demonstrate your ability to:
