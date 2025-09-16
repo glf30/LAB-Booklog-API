@@ -76,7 +76,6 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 
 If you finish the required functionality, consider one of these:
 - Add pagination to `GET /api/books` using `?page=` and `?limit=`
-- Add a `PATCH /api/books/:id/favorite` route to toggle a book’s favorite status
-- Import `express-validator` and create logical validations for all of your fields (separate these into different folders for best practice!)
+- Add a `PUT /api/books/:id/favorite` route to toggle a book’s favorite status
 
 ---
