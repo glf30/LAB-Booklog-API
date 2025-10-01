@@ -40,7 +40,6 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 | `DELETE` | `/:id` | Delete a book <br>**Only if not marked `favorite`** |
 
 #### Book Index (`GET /api/books`) must support:
-- Sorting by `dateFinished` (descending by default)
 - Sorting by **author name** using query param `?sort=author`
 - Filtering by:
   - `author` ID: `?author=<authorId>`
@@ -78,4 +77,5 @@ If you finish the required functionality, consider one of these:
 - Add pagination to `GET /api/books` using `?page=` and `?limit=`
 - Add a `PUT /api/books/:id/favorite` route to toggle a book’s favorite status
 - Import `express-validator` and create logical validations for all of your fields (separate these into different folders for best practice!)
+- Sorting by `dateFinished` (descending by default)
 ---
