@@ -63,7 +63,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 
 - Use MongoDB with Mongoose models for `Book` and `Author`
 - Utilize Models, Controllers, and Routers to organize your codebase
-- Use `.populate()` to link books with their authors
+- Use `.populate()` to display proper data information instead of just the ObjectIDs
 - Use query parameters to support filtering and sorting
 - Prevent deletion of:
   - Books marked as `favorite: true`
@@ -76,6 +76,5 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 If you finish the required functionality, consider one of these:
 - Add pagination to `GET /api/books` using `?page=` and `?limit=` for example, page=1 and limit=15 means get the first 15 items.  page=2 and limit=10 means get the 2nd 10 items (items 11-20)
 - Add a `PUT /api/books/:id/favorite` route to toggle a book’s favorite status
-- Import `express-validator` and create logical validations for all of your fields (separate these into different folders for best practice!)
 - Sorting by `dateFinished` (descending by default)
 ---
