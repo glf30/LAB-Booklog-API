@@ -43,10 +43,10 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 - Filtering by:
   - `author` ID: `?author=<authorId>`
   - `genre`: `?genre=fiction`
-    
--*** BONUS Sorting by
-    - **author name** using query param `?sort=author`
-    - `dateFinished` (descending by default) (need to change type to Date instead of String https://mongoosejs.com/docs/tutorials/dates.html)
+ 
+- BONUS Sorting by:
+   - **author name** using query param `?sort=author`
+   - `dateFinished` (descending by default) (need to change type to Date instead of String https://mongoosejs.com/docs/tutorials/dates.html)
 
 ---
 
