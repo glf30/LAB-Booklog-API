@@ -73,7 +73,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 
 ## Optional Stretch
 
-If you finish the required functionality, consider one of these:
+If you finish the required functionality, consider one of these (may need to do some research!):
 - Add pagination to `GET /api/books` using `?page=` and `?limit=` for example, page=1 and limit=15 means get the first 15 items.  page=2 and limit=10 means get the 2nd 10 items (items 11-20)
 - Add a `PUT /api/books/:id/favorite` route to toggle a book’s favorite status
 - Sorting by `dateFinished` (descending by default)
