@@ -7,7 +7,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 - Design referenced data relationships
 - Structure a modular Express/Mongoose app
 - Implement full REST CRUD with real-world logic
-- Handle filtering, sorting, and custom route behavior
+- Handle filtering and (optionally) sorting
 
 ---
 
@@ -21,7 +21,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 - `title` (String, required)
 - `author` (ObjectId reference to Author, required)
 - `genre` (String, optional)
-- `dateFinished` (Date, required)
+- `dateFinished` (String, required)
 - `favorite` (Boolean, default: false)
 - `notes` (String, optional)
 
@@ -40,10 +40,12 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 | `DELETE` | `/:id` | Delete a book <br>**Only if not marked `favorite`** |
 
 #### Book Index (`GET /api/books`) must support:
-- Sorting by **author name** using query param `?sort=author`
 - Filtering by:
   - `author` ID: `?author=<authorId>`
-  - `genre`: `?genre=fiction`
+  - `genre`: `?genre=fiction` 
+-*** BONUS - Sorting by
+    - **author name** using query param `?sort=author`
+    - `dateFinished` (descending by default) (need to change type to Date instead of String https://mongoosejs.com/docs/tutorials/dates.html)
 
 ---
 
@@ -64,7 +66,7 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 - Use MongoDB with Mongoose models for `Book` and `Author`
 - Utilize Models, Controllers, and Routers to organize your codebase
 - Use `.populate()` to display proper data information instead of just the ObjectIDs
-- Use query parameters to support filtering and sorting
+- Use query parameters to support filtering
 - Prevent deletion of:
   - Books marked as `favorite: true`
   - Authors who have any associated books
@@ -76,5 +78,4 @@ Build a backend-only RESTful API using MongoDB and Express that models a book tr
 If you finish the required functionality, consider one of these (may need to do some research!):
 - Add pagination to `GET /api/books` using `?page=` and `?limit=` for example, page=1 and limit=15 means get the first 15 items.  page=2 and limit=10 means get the 2nd 10 items (items 11-20)
 - Add a `PUT /api/books/:id/favorite` route to toggle a book’s favorite status
-- Sorting by `dateFinished` (descending by default)
 ---
